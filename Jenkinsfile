@@ -1,11 +1,11 @@
 pipeline {
     
 	agent any
-/*	
+	
 	tools {
-        maven "maven3"
+        maven "maven"
     }
-*/	
+/*	
     environment {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
@@ -15,7 +15,7 @@ pipeline {
         NEXUS_CREDENTIAL_ID = "nexuslogin"
         ARTVERSION = "${env.BUILD_ID}"
     }
-	
+*/	
     stages{
         
         stage('BUILD'){
@@ -52,7 +52,7 @@ pipeline {
                 }
             }
         }
-
+/*
         stage('CODE ANALYSIS with SONARQUBE') {
           
 		  environment {
@@ -114,7 +114,7 @@ pipeline {
             }
         }
 
-
+*/
     }
 
 
